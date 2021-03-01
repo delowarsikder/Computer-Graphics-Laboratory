@@ -117,7 +117,7 @@ R = [[u_hat[0], u_hat[1], u_hat[2], 0], [v_hat[0], v_hat[1], v_hat[2], 0],
 print("Composite Rotation Matrix R :\n",np.matrix(R))
 # # # World co-ordinate to view co-ordinate transformation
 M_wc_vc = np.dot(np.array(R), np.array(T))
-print("WC_to_VC :\n",M_wc_vc)
+print("M_wc_to_vc :\n",M_wc_vc)
 
 # # # point for view co-ordinate
 print("Ans of question no 1. : \n")
