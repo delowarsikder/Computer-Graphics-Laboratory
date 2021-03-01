@@ -3,8 +3,8 @@ import math
 from math import *
 from operator import *
 import numpy as np
-# roll=input("Enter your Roll : ")
-roll = "1607094"
+roll=input("Enter your Roll : ")
+# roll = "1607094"
 # initial কারিসমা
 hash = hashlib.md5(roll.encode())
 out = hash.hexdigest()
