@@ -84,6 +84,11 @@ p0 = [x0, y0, z0]
 pr = [xr, yr, zr]
 V = [1, 2, 0]  ### given VCS point
 print("p0 : ",p0)
+print("p1 : ",p1)
+print("p2 : ",p2)
+print("p3 : ",p3)
+print("p4 : ",p4)
+
 print("pr : ",pr)
 print("V: ",V)
 N = [x1 - x2 for (x1, x2) in zip(p0, pr)]
