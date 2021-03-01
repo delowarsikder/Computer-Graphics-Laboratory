@@ -171,6 +171,11 @@ print("p_nv : ",np.matrix(p_nv))
 p_hat=np.dot(M,np.array(p_nv).T)
 print("p_hat :\n",p_hat)
 
+print("hp_1 : ",p_hat[0][-1])
+print("hp_2 : ",p_hat[1][-1])
+print("hp_2 : ",p_hat[2][-1])
+print("hp_3 : ",p_hat[3][-1])
+
 p_1n=p_hat.T[0]/p_hat.T[0][-1]
 # p_1n=p_1n[:-1]
 print("p_1n :",p_1n)
