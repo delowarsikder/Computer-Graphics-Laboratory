@@ -172,7 +172,7 @@ M=[
 ]
 print("perspective projection matrix M :\n",np.matrix(M))
 p_nv=[p_1v,p_2v,p_3v,p_4v]
-print("p_nv : ",np.matrix(p_nv))
+# print("p_nv : ",np.matrix(p_nv))
 p_hat=np.dot(M,np.array(p_nv).T)
 print("p_hat :\n",p_hat)
 ###calculate the p_pers
@@ -184,11 +184,6 @@ print("p_pers1 : ",p_pers.T[0])
 print("p_pers2 : ",p_pers.T[1])
 print("p_pers3 : ",p_pers.T[2])
 print("p_pers4 : ",p_pers.T[3])
-
-print("hp_1 : ",p_pers.T[0][-1])
-print("hp_2 : ",p_pers.T[1][-1])
-print("hp_3 : ",p_pers.T[2][-1])
-print("hp_4 : ",p_pers.T[3][-1])
 
 p_1n=p_hat.T[0]/p_hat.T[0][-1]
 p_1n=p_1n[:-1]
