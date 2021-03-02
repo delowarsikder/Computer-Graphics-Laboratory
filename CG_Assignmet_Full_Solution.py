@@ -95,17 +95,17 @@ N = [x1 - x2 for (x1, x2) in zip(p0, pr)]
 print("N : ",N)
 # # # unit vector of n
 n_hat = N / np.linalg.norm(N)
-print("n_hat : ",n_hat)
+# print("n_hat : ",n_hat)
 # # # # calculate the value of U
 U = np.cross(np.array(V), np.array(N))
 print("U = VxN : ",U)
 # # # unit vector of U
 u_hat = U / np.linalg.norm(U)
-print("u_hat : ",u_hat)
+# print("u_hat : ",u_hat)
 
 # # # Calcuate the value of small v name as v_hat
 v_hat = np.cross(np.array(n_hat), np.array(u_hat))
-print("v_hat= n x u : ",v_hat)
+print("unit_vector : v_hat = n x u : ",v_hat)
 # # # Translation Matrix:
 T = [[1, 0, 0, -x0], [0, 1, 0, -y0], [0, 0, 1, -z0], [0, 0, 0, 1]]
 print("Translation Matrix T:\n",np.matrix(T))
@@ -118,6 +118,10 @@ print("Composite Rotation Matrix R :\n",np.matrix(R))
 # # # World co-ordinate to view co-ordinate transformation
 M_wc_vc = np.dot(np.array(R), np.array(T))
 print("M_wc_to_vc :\n",M_wc_vc)
+
+print("dx : ",M_wc_vc[0][-1])
+print("dy : ",M_wc_vc[1][-1])
+print("dz : ",M_wc_vc[2][-1])
 
 # # # point for view co-ordinate
 print("Ans of question no 1. : \n")
@@ -171,6 +175,7 @@ M=[
     ]
 ]
 print("perspective projection matrix M :\n",np.matrix(M))
+
 p_nv=[p_1v,p_2v,p_3v,p_4v]
 # print("p_nv : ",np.matrix(p_nv))
 p_hat=np.dot(M,np.array(p_nv).T)
@@ -180,10 +185,11 @@ pp=[[abs(n),0,0,0],[0,abs(n),0,0],[0,0,abs(n)+abs(f),abs(n)*abs(f)],[0,0,-1,0]]
 # print(np.matrix(pp))
 p_pers=np.dot(pp,np.array(p_nv).T)
 # print("p_pers \n",p_pers)
-print("p_pers1 : ",p_pers.T[0])
-print("p_pers2 : ",p_pers.T[1])
-print("p_pers3 : ",p_pers.T[2])
-print("p_pers4 : ",p_pers.T[3])
+
+print("p_pers1 : ",p_hat.T[0])
+print("p_pers2 : ",p_hat.T[1])
+print("p_pers3 : ",p_hat.T[2])
+print("p_pers4 : ",p_hat.T[3])
 
 p_1n=p_hat.T[0]/p_hat.T[0][-1]
 p_1n=p_1n[:-1]
