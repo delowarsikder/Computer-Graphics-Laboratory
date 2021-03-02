@@ -117,7 +117,7 @@ R = [[u_hat[0], u_hat[1], u_hat[2], 0], [v_hat[0], v_hat[1], v_hat[2], 0],
 print("Composite Rotation Matrix R :\n",np.matrix(R))
 # # # World co-ordinate to view co-ordinate transformation
 M_wc_vc = np.dot(np.array(R), np.array(T))
-print("M_wc_to_vc :\n",M_wc_vc)
+print("M_wc_to_vc = R x T:\n",M_wc_vc)
 
 print("dx : ",M_wc_vc[0][-1])
 print("dy : ",M_wc_vc[1][-1])
@@ -179,7 +179,7 @@ print("perspective projection matrix M :\n",np.matrix(M))
 p_nv=[p_1v,p_2v,p_3v,p_4v]
 # print("p_nv : ",np.matrix(p_nv))
 p_hat=np.dot(M,np.array(p_nv).T)
-print("p_hat :\n",p_hat)
+print("p_hat = M_wc_vc x P_nv :\n",p_hat)
 ###calculate the p_pers
 pp=[[abs(n),0,0,0],[0,abs(n),0,0],[0,0,abs(n)+abs(f),abs(n)*abs(f)],[0,0,-1,0]]
 # print(np.matrix(pp))
