@@ -50,7 +50,7 @@ you will insure that don't modify ,replace or delete file.just you paste your de
 6.Press `F9` or go to `Built` -> `Run` to run your project.
 
 ```
-if you follow above instruction properly . you will successfully run the programe
+If you follow the instructions above correctly. Then your program will be successfully run properly.
 ```
 >### Happy Computer Graphics
 
