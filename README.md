@@ -20,6 +20,8 @@
  
 *	**Note:** If your Operating System is 32 bit, folder name might be `C:\Windows\System32`
 
+* if your `Codeblocks is 64 bit` , you will get `Codeblocks` in `Program Files` instead of  `Program Files (x86)`
+
 ```sh
 N.B: When you go to noted path and paste the file.
 
@@ -32,9 +34,9 @@ you will insure that don't modify ,replace or delete file.just you paste your de
 
 2.Click `add` button and go to `C:\Program Files (x86)\CodeBlocks\MinGW\lib` and add this file (`glut32.lib, libglu32.a, libopengl32.a`) one by one 
 
-3.Press ok
+3.Press ok  and finally Click `ok` and Close the top of window.
 
->>### Test the settings
+>>## Test the settings
 
 1.Open `Codeblocks` go to `File->New -> Project -> GLUT Project -> Go -> Next `
 
