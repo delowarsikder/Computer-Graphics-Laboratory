@@ -1,9 +1,8 @@
 ## How To install open GL in Windows-10 32 bit or 64 bit system
 
-> You should follow two step one by one
+>### You should follow the below steps one by one
 
->## 1. Download and setup 
-
+>## Step 1: Download and setup 
 
 1.Download and install ` codeblocks-17.12mingw-setup.exe ` From 
 **[Here](https://sourceforge.net/projects/codeblocks/files/Binaries/17.12/Windows/codeblocks-17.12mingw-setup.exe/download)**
@@ -28,7 +27,7 @@ N.B: When you go to noted path and paste the file.
 you will insure that don't modify ,replace or delete file.just you paste your desire file.
 ```
 
->## 2.Linker settings for codeblocks 
+>## Step 2: Linker settings for codeblocks 
 
 1.Open `Codebocks` and then go `settings ->  compiler -> linker settings`.
 
