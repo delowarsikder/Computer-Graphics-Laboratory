@@ -38,13 +38,15 @@ you will insure that don't modify ,replace or delete file.just you paste your de
 
 1.Open `Codeblocks` go to `File->New -> Project -> GLUT Project -> Go -> Next `
 
-2.Provide the ***project name*** and Choose the path where you want to save your project. 
+2.Provide the ***project name*** and Choose the path where you want to save your project then go to `next`. 
 
-3.When you create new project.you will already get a ready made project default.
+3.select `C:\Program Files (x86)\CodeBlocks\MinGW` as a GULT's Location then `next` -> `Finish`.
 
-4.Add `#include<windows.h>` Line in your project .
+4.When you create new project.you will already get a ready made project default.
 
-5.Press `F9` or go to `Built` -> `Run` to run your project.
+5.Click `main.cpp` file and Add `#include<windows.h>` Line in top your project code.
+
+6.Press `F9` or go to `Built` -> `Run` to run your project.
 
 ```
 if you follow above instruction properly . you will successfully run the programe
