@@ -20,7 +20,9 @@
 *	**Note:** If your Operating System is 32 bit, Folder name might be `C:\Windows\System32`
 
 ```sh
-N.B: When you go to noted path and paste the file.you will insure that do not modify ,replace or delete file.just you paste your desire file.
+N.B: When you go to noted path and paste the file.
+
+you will insure that do not modify ,replace or delete file.just you paste your desire file.
 ```
 
 >## 2.Linker settings for codeblocks 
